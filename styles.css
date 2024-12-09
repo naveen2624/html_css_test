@@ -53,7 +53,7 @@ nav {
 .nav-menu a {
   text-decoration: none;
   color: #add8e6;
-  font-size: 1rem;
+  font-size: 15px;
   padding: 5px 10px;
   transition: all 0.3s ease;
 }
@@ -104,7 +104,7 @@ nav {
   border: none;
   border-radius: 20px;
   padding: 5px 15px;
-  font-size: 1rem;
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: bold;
@@ -137,6 +137,21 @@ nav {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 1120px) {
+  .nav-menu a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
 /* Mobile View */
 @media (max-width: 768px) {
   .nav-menu {
@@ -168,7 +183,7 @@ nav {
   }
 
   .nav-menu a {
-    font-size: 0.9rem;
+    font-size: 10px;
   }
 
   .signin-btn {
@@ -397,9 +412,14 @@ nav {
   .features {
     grid-template-columns: 1fr; /* Stack features for phones */
   }
+  .features-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .buttons {
-    flex-direction: column; /* Stack buttons vertically on phones */
+    flex-direction: row; /* Stack buttons vertically on phones */
     gap: 0.5rem;
   }
 }
@@ -494,13 +514,20 @@ nav {
     align-items: flex-start;
     padding: 10px 20px;
   }
+  .secondary-menu {
+    background: #0083c9;
+  }
 
   .hamburger-menu {
     display: flex;
   }
+  #hamburger-btn {
+    color: white;
+  }
 
   .hamburger-menu #menu-heading {
     display: block;
+    color: white;
   }
 
   .secondary-menu-list li {
@@ -788,7 +815,7 @@ body {
   .footer-container {
     flex-direction: column; /* Stack columns vertically for tablet size */
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
   .footer-nav1,
   .footer-nav2,
