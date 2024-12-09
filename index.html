@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML CSS Test</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -43,6 +43,13 @@
       </div>
     </header>
     <section class="promo-section">
+      <div class="breadcrumb">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li>&gt;</li>
+          <li><a href="#LoremIpsumTool">Lorem Ipsum Tool</a></li>
+        </ul>
+      </div>
       <div class="container">
         <!-- Title and Play Button -->
         <h2 class="promo-title">
@@ -59,7 +66,7 @@
             <source src="your-video-file.ogg" type="video/ogg" />
             Your browser does not support the video tag.
           </video> -->
-          <img src="./Assets/play-circle-regular-24.png" alt="Play button" />
+          <img src="./Assets/video-play-icon.png" alt="Play button" />
         </div>
 
         <!-- Pricing Info -->
@@ -70,8 +77,11 @@
           </p>
           <div class="buttons">
             <button class="btn-download">Free Download</button>
-            <button class="btn-buy">Buy Now!</button>
-            <div class="discount">75% OFF</div>
+            <button class="btn-buy">
+              <span class="buy-text">Buy Now! </span
+              ><span class="discount"> 75% OFF</span>
+            </button>
+            <!-- <div class="discount">75% OFF</div> -->
           </div>
         </div>
 
@@ -121,6 +131,10 @@
 
     <!-- Next Menu Section -->
     <section class="secondary-menu">
+      <div class="hamburger-menu">
+        <button id="hamburger-btn">&#9776;</button>
+        <h3 id="menu-heading">Product List</h3>
+      </div>
       <ul class="secondary-menu-list">
         <li>
           <a href="#Overview">
@@ -176,7 +190,7 @@
       <!-- Top Section with Image and Heading -->
       <div class="content-header">
         <img
-          src="./Assets/personwithlaptop.png"
+          src="./Assets/personwithlaptop.jpg"
           alt="Person with laptop"
           class="header-image"
         />
@@ -259,7 +273,7 @@
           <button class="try-free-btn">Try For Free!</button>
         </div>
         <div class="service-image">
-          <img src="./Assets/personwithlaptop2.png" alt="person with laptop" />
+          <img src="./Assets/personwithlaptop2.jpg" alt="person with laptop" />
         </div>
       </div>
     </section>
